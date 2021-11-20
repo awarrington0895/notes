@@ -18,7 +18,10 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		"rvest.vs-code-prettier-eslint",
+		"infinity1207.angular2-switcher",
+		"firsttris.vscode-jest-runner"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
