@@ -35,7 +35,9 @@ export class NoteService {
       'title': filter.title,
     };
 
-    return this.http.get<Note[]>(this.api, {params, headers});
+    const userNotes = 'http://localhost:8080/user/notes';
+
+    return this.http.get<Note[]>(userNotes, {params, headers});
   }
 
   save(entity: Note): Observable<Note> {
