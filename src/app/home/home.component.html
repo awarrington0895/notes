@@ -1,4 +1,3 @@
-<div>
-  <button *ngIf="!(authService.authState$ | async)?.isAuthenticated" (click)="oktaAuth.signInWithRedirect()">Login</button>
-  <button *ngIf="(authService.authState$ | async)?.isAuthenticated" (click)="oktaAuth.signOut()">Logout</button>
-</div>
+<p>
+  <a routerLink="/notes" *ngIf="(authService.authState$ | async)?.isAuthenticated">View Notes</a>
+</p>
